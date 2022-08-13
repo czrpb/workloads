@@ -75,6 +75,84 @@ Probably the most basic and desired of metric about a run is knowing the *shape*
 From the JSON data this can be calculated by:
 
 1. Filtering for `Point` type and the `http_req_duration` metric
+   <details>
+     <summary>Examples</summary>
+```json
+{
+  "type": "Point",
+  "data": {
+    "time": "2022-08-13T01:26:26.97176957Z",
+    "value": 131.205895,
+    "tags": {
+      "expected_response": "true",
+      "group": "",
+      "scenario": "default",
+      "url": "http://test.k6.io",
+      "name": "http://test.k6.io",
+      "method": "GET",
+      "status": "308",
+      "proto": "HTTP/1.1"
+    }
+  },
+  "metric": "http_req_duration"
+}
+{
+  "type": "Point",
+  "data": {
+    "time": "2022-08-13T01:26:27.383534784Z",
+    "value": 140.027673,
+    "tags": {
+      "group": "",
+      "url": "https://test.k6.io/",
+      "name": "https://test.k6.io/",
+      "status": "200",
+      "proto": "HTTP/1.1",
+      "expected_response": "true",
+      "scenario": "default",
+      "method": "GET",
+      "tls_version": "tls1.3"
+    }
+  },
+  "metric": "http_req_duration"
+}
+{
+  "type": "Point",
+  "data": {
+    "time": "2022-08-13T01:26:27.474549239Z",
+    "value": 139.670795,
+    "tags": {
+      "status": "308",
+      "proto": "HTTP/1.1",
+      "expected_response": "true",
+      "scenario": "default",
+      "group": "",
+      "url": "http://test.k6.io",
+      "name": "http://test.k6.io",
+      "method": "GET"
+    }
+  },
+  "metric": "http_req_duration"
+}
+{
+  "type": "Point",
+  "data": {
+    "time": "2022-08-13T01:26:27.513736109Z",
+    "value": 130.095116,
+    "tags": {
+      "url": "http://test.k6.io",
+      "name": "http://test.k6.io",
+      "method": "GET",
+      "status": "308",
+      "proto": "HTTP/1.1",
+      "expected_response": "true",
+      "group": "",
+      "scenario": "default"
+    }
+  },
+  "metric": "http_req_duration"
+}
+```
+   </details>
 2. In this structure is the the ISO timestamp
 3. Convert this timestamp to an integer second (floor or trimming milliseconds)
 4. Find the count of these
