@@ -77,7 +77,6 @@ From the JSON data this can be calculated by:
 1. Filtering for `Point` type and the `http_req_duration` metric
    <details>
      <summary>Examples</summary>
-```json
 {
   "type": "Point",
   "data": {
@@ -151,7 +150,6 @@ From the JSON data this can be calculated by:
   },
   "metric": "http_req_duration"
 }
-```
    </details>
 2. In this structure is the the ISO timestamp
 3. Convert this timestamp to an integer second (floor or trimming milliseconds)
