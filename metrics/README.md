@@ -66,6 +66,7 @@ export const options = {
 {"type":"Metric","data":{"name":"http_req_duration","type":"trend","contains":"time","thresholds":[],"submetrics":[{"name":"http_req_duration{expected_response:true}","suffix":"expected_response:true","tags":{"expected_response":"true"}}]},"metric":"http_req_duration"}
 {"type":"Point","data":{"time":"2022-08-13T01:26:26.97176957Z","value":131.205895,"tags":{"expected_response":"true","group":"","scenario":"default","url":"http://test.k6.io","name":"http://test.k6.io","method":"GET","status":"308","proto":"HTTP/1.1"}},"metric":"http_req_duration"}
 {"type":"Metric","data":{"name":"http_req_blocked","type":"trend","contains":"time","thresholds":[],"submetrics":null},"metric":"http_req_blocked"}
+   ...
 ```
 
 ### Requests per Second (rps)
