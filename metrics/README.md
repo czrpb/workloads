@@ -75,8 +75,11 @@ Probably the most basic and desired of metric about a run is knowing the *shape*
 From the JSON data this can be calculated by:
 
 1. Filtering for `Point` type and the `http_req_duration` metric
+
    <details>
      <summary>Examples</summary>
+
+```json
 {
   "type": "Point",
   "data": {
@@ -150,11 +153,13 @@ From the JSON data this can be calculated by:
   },
   "metric": "http_req_duration"
 }
+```
    </details>
-2. In this structure is the the ISO timestamp
-3. Convert this timestamp to an integer second (floor or trimming milliseconds)
-4. Find the count of these
-5. Plot
+
+1. In this structure is the the ISO timestamp
+2. Convert this timestamp to an integer second (floor or trimming milliseconds)
+3. Find the count of these
+4. Plot
 
 See: [/workload/metrics/k6.exs](/workload/metrics/k6.exs)
 
