@@ -2,7 +2,13 @@
 
 <img src="k6-metrics.gif">
 
-## `--out json=<file>`
+## Metrics
+
+:information_source: https://k6.io/docs/using-k6/metrics/
+
+## Generating Metrics for a Run
+
+### Command-line Argument: `--out json=<file>`
 
 To generate the metric file in JSON:
 
@@ -10,4 +16,6 @@ To generate the metric file in JSON:
 
 :information_source: https://k6.io/docs/results-visualization/json/
 
-## 
+### Example
+
+[/workloads/metrics/k6out.json](/workloads/metrics/k6out.json)
