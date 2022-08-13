@@ -40,7 +40,7 @@ The output file's lines are 1 of 2 types:
 
 ### Example
 
-For the follow basic test:
+For the following basic test:
 
 1. Ramp up linearly to 10 VUs in 5seconds
 2. For 10seconds keep flat at 10
@@ -81,5 +81,34 @@ From the JSON data this can be calculated by:
 5. Plot
 
 See: [/workload/metrics/k6.exs](/workload/metrics/k6.exs)
+
+Output:
+
+```
+% elixir k6.exs k6out.json http_req_duration
+[
+  {0, 1},
+  {1, 7},
+  {2, 24},
+  {3, 34},
+  {4, 48},
+  {5, 64},
+  {6, 73},
+  {7, 74},
+  {8, 77},
+  {9, 73},
+  {10, 77},
+  {11, 76},
+  {12, 74},
+  {13, 76},
+  {14, 72},
+  {15, 78},
+  {16, 67},
+  {17, 53},
+  {18, 41},
+  {19, 22},
+  {20, 11}
+]
+```
 
 <img src="graph.png">
