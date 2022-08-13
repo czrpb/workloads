@@ -133,4 +133,6 @@ Output:
 ]
 ```
 
+`rps` visualized:
+
 <img src="graph.png">
