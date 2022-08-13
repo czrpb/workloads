@@ -71,7 +71,7 @@ export const options = {
 
 ### Requests per Second (rps)
 
-Probably the most basic and desired of metric about a run is knowing the *shape* of the run, ie: the number of requests made in some unit of time.
+Probably the most basic and desired of metric about a run is knowing the *shape* of the run, ie: the number of requests made in some unit of time, usually per second.
 
 From the JSON data this can be calculated by:
 
