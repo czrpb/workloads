@@ -25,6 +25,11 @@ export const options = {
 
 ## Solution
 
+The following curve is a steady load:
+
+* Flat
+
+
 The following are curves that are progressively steep, meaning the
 ramp to the desired load is steeper.
 Another way to say this is that
@@ -35,9 +40,11 @@ the curves can be considered *spikier*:
 * <img src="fib.png" width=32> Fibonnaci
 * <img src="exp.png" width=32> Exponential (2**N)
 
+
 The following curves put the greater load early and then ramp
 slower to the desired load:
 
+* Naturals Square Root
 * <img src="log.png" width=32> Log
 
 ### Review the Tests
