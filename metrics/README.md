@@ -76,36 +76,31 @@ From the JSON data this can be calculated by:
 
 1. Filtering for `Point` type and the `http_req_duration` metric
 
-   <details>
+   ```json
+   {
+     "type": "Point",
+     "data": {
+       "time": "2022-08-13T01:26:26.97176957Z",
+       "value": 131.205895,
+       "tags": {
+         "expected_response": "true",
+         "group": "",
+         "scenario": "default",
+         "url": "http://test.k6.io",
+         "name": "http://test.k6.io",
+         "method": "GET",
+         "status": "308",
+         "proto": "HTTP/1.1"
+       }
+     },
+     "metric": "http_req_duration"
+   }
+   ```
 
-     <summary>Examples</summary>
-
-     ```json
-     {
-       "type": "Point",
-       "data": {
-         "time": "2022-08-13T01:26:26.97176957Z",
-         "value": 131.205895,
-         "tags": {
-           "expected_response": "true",
-           "group": "",
-           "scenario": "default",
-           "url": "http://test.k6.io",
-           "name": "http://test.k6.io",
-           "method": "GET",
-           "status": "308",
-           "proto": "HTTP/1.1"
-         }
-       },
-       "metric": "http_req_duration"
-     }
-     ```
-   </details>
-
-1. In this structure is the the ISO timestamp
-2. Convert this timestamp to an integer second (floor or trimming milliseconds)
-3. Find the count of these
-4. Plot
+2. In this structure is the the ISO timestamp
+3. Convert this timestamp to an integer second (floor or trimming milliseconds)
+4. Find the count of these
+5. Plot
 
 See: [/workload/metrics/k6.exs](/workload/metrics/k6.exs)
 
