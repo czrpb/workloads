@@ -43,8 +43,8 @@ The output file's lines are 1 of 2 types:
 For the following basic test:
 
 1. Ramp up linearly to 10 VUs in 5seconds
-2. For 10seconds keep flat at 10
-3. Ramp down linearly to 10 VUs in 5seconds
+2. For 10seconds keep flat at 10 VUs
+3. Ramp down linearly to 0 VUs in 5seconds
 
 [/workload/metrics/testk6.js](/workload/metrics/testk6.js)
 
