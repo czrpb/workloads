@@ -2,8 +2,6 @@
 
 <img src="k6-metrics.gif">
 
-<img src="exp_flat_inv-sqrs.png">
-
 ## Metrics
 
 When `k6 run` is executed, a summary/aggregate of performance statistics are displayed in the terminal.
@@ -139,3 +137,13 @@ Output:
 `rps` visualized:
 
 <img src="graph.png">
+
+Output:
+
+```
+2,19,50,76,105,129,157,179,203,232,245,271,272,288,301,314,323,322,332,338,342,353,349,351,354,360,358,365,358,370,356,366,375,371,370,380,377,377,391,383,393,370,337,311,271,240,224,195,169,149,120,111,103,86,73,62,52,52,40,40,34,30,25,21,15,11,8,7,7,8,4
+```
+
+`rps` visualized:
+
+<img src="exp_flat_inv-sqrs.png">
