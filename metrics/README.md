@@ -2,6 +2,8 @@
 
 <img src="k6-metrics.gif">
 
+<img src="exp_flat_inv-sqrs.png">
+
 ## Metrics
 
 When `k6 run` is executed, a summary/aggregate of performance statistics are displayed in the terminal.

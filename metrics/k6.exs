@@ -30,7 +30,8 @@ defmodule Parse do
 
     requests
     |> Enum.frequencies()
-    |> Enum.map(fn {k, v} -> {k-first, v} end)
+    |> Enum.sort()
+    |> Enum.map(fn {_, v} -> v end)
   end
 end
 
@@ -38,4 +39,5 @@ end
 
 Parse.getpointsbymetric(metricsfile, desiredmetric)
 |> Parse.rps()
-|> IO.inspect()
+|> Enum.join(",")
+|> IO.puts()
